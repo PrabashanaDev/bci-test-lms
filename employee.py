@@ -10,7 +10,28 @@ class Employee:
     def showEmployee(self):
         print(f"Employee Id: {self.empID} Employee Name: {self.empName}")
 
-employee1 = Employee()
-employee1.setEmployee("001", "Chathura")
+class Academic(Employee):
+    def __init__(self):
+        self.hourRate = ""
+        self.hourWork = ""
 
-employee1.showEmployee()
+    def setAcademic(self, hourRate, hourWork):
+        self.hourRate = hourRate
+        self.hourWork = hourWork
+
+    def showAcademic(self):
+        print(f"Salary is: {self.hourRate*self.hourWork} for a day")
+
+class NonAcademic(Employee):
+    def __init__(self):
+        self.NhourRate = ""
+        self.hourWork = ""
+    
+    def setNonAcademic(self, hourRate, hourWork):
+        self.hourRate = hourRate
+        self.hourWork = hourWork
+
+    def showNonAcademic(self):
+        print(f"Salary is: {self.hourRate*self.hourWork} for a day")
+
+
