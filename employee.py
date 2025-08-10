@@ -1,4 +1,6 @@
-class Employee:
+from abc import ABC, abstractmethod
+
+class Employee(ABC):
     def __init__(self):
         self.empID = ""
         self.empName = ""
@@ -7,8 +9,9 @@ class Employee:
         self.empID = empID
         self.empName = empName
 
-    def showEmployee(self):
-        print(f"Employee Id: {self.empID} Employee Name: {self.empName}")
+    @abstractmethod
+    def calculateSalary(self):
+        pass
 
 class Academic(Employee):
     def __init__(self):
@@ -19,19 +22,20 @@ class Academic(Employee):
         self.hourRate = hourRate
         self.hourWork = hourWork
 
-    def showAcademic(self):
-        print(f"Salary is: {self.hourRate*self.hourWork} for a day")
+    def calculateSalary(self):
+        return self.hourRate * self.hourWork
+
 
 class NonAcademic(Employee):
     def __init__(self):
         self.NhourRate = ""
-        self.hourWork = ""
+        self.hourWork = ""    
     
     def setNonAcademic(self, hourRate, hourWork):
         self.hourRate = hourRate
         self.hourWork = hourWork
 
-    def showNonAcademic(self):
-        print(f"Salary is: {self.hourRate*self.hourWork} for a day")
+    def calculateSalary(self):
+        return self.NhourRate * self.hourWork
 
 
