@@ -9,6 +9,9 @@ class Course(ABC):
     def showCourse(self):
         print(f"Course ID: {self.courID}, Course Name: {self.courName}")
 
+    def setCourse(self, courName):
+        self.courName = courName
+
     @abstractmethod
     def calAvg(self):
         pass
