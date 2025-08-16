@@ -12,6 +12,9 @@ class Student:
     def setCourse(self, course):
         self.course = course
 
+    def stuMarks(self, marks):
+        self.marks = marks
+
 student1 = Student("001", "Chathura", "23")
 student2 = Student("002", "Akash", "22")
 student3 = Student("003", "Samidu", "21")

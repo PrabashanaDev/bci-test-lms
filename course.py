@@ -18,6 +18,7 @@ class Course(ABC):
 
 
 class Degree(Course):
+    subjects= 5
     def __init__(self, degName):
         self.degName = degName
     def showDegree(self):
@@ -26,6 +27,7 @@ class Degree(Course):
         pass
 
 class diploma(Course):
+    subjects = 3
     def __init__(self, dipName):
         self.dipName = dipName
     def showDiploma(self):
@@ -33,7 +35,8 @@ class diploma(Course):
     def calAvg(self):
         pass
 
-class certificate():
+class certificate(Course):
+    subjects = 2
     def __init__(self, certName):
         self.certName = certName
     def showCertificate(self):
