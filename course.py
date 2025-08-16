@@ -13,26 +13,26 @@ class Course(ABC):
         print(f"Course ID: {self.courID}, Course Name: {self.courName}")
 
     @abstractmethod
-    def calSalary(self):
+    def calAvg(self):
         pass
 
 
 class Degree(Course):
     def __init__(self):
         pass
-    def calSalary(self):
+    def calAvg(self):
         pass
 
 class diploma(Course):
     def __init__(self):
         pass
-    def calSalary(self):
+    def calAvg(self):
         pass
 
 class certificate():
     def __init__(self):
         pass
-    def calSalary(self):
+    def calAvg(self):
         pass
 
 
