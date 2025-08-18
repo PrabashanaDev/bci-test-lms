@@ -44,20 +44,20 @@ class certificate(Course):
     def calAvg(self):
         pass
 
-degree1 = Degree("BSIT")
-degree2 = Degree("BSSE")
-degree1.showDegree()
-degree2.showDegree()
+if __name__ == "__main__":
 
-diploma1 = diploma("Aquinas")
-diploma1.showDiploma()
+    degree1 = Degree("BSIT")
+    degree2 = Degree("BSSE")
 
-certificate1 = certificate("Robotic")
-certificate1.showCertificate()
+    diploma1 = diploma("Aquinas")
+
+    certificate1 = certificate("Robotic")
 
 
-
-
+    degree1.showDegree()
+    degree2.showDegree()
+    diploma1.showDiploma()
+    certificate1.showCertificate()
 
 
 

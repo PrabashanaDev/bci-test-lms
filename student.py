@@ -15,11 +15,13 @@ class Student:
     def stuMarks(self, marks):
         self.marks = marks
 
-student1 = Student("001", "Chathura", "23")
-student2 = Student("002", "Akash", "22")
-student3 = Student("003", "Samidu", "21")
+if __name__ == "__main__":
 
-student1.showStudent()
-student2.showStudent()
-student3.showStudent()
+    student1 = Student("001", "Chathura", "23")
+    student2 = Student("002", "Akash", "22")
+    student3 = Student("003", "Samidu", "21")
+
+    student1.showStudent()
+    student2.showStudent()
+    student3.showStudent()
 
