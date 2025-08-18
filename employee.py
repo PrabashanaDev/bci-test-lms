@@ -37,10 +37,12 @@ class NonAcademic(Employee):
     def calculateSalary(self):
         return self.hourRate * self.hourWork
     
-employee1 = Academic("001", "Chathura", 1000, 8)
-employee2 = NonAcademic("002", "Akash", 800, 8)
-employee3 = Academic("003", "Samidu", 900, 8)
+if __name__ == "__main__":
+    
+    employee1 = Academic("001", "Chathura", 1000, 8)
+    employee2 = NonAcademic("002", "Akash", 800, 8)
+    employee3 = Academic("003", "Samidu", 900, 8)
 
-
-
-
+    employee1.showAcademic()
+    employee2.showNonAcademic()
+    employee3.showAcademic()
