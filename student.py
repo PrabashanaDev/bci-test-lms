@@ -27,9 +27,7 @@ if __name__ == "__main__":
     student2.setCourse(certificate("BSSE"))
     student3.setCourse(diploma("Aquinas"))
 
-    student1.showStudent()
-    student2.showStudent()
-    student3.showStudent()
+    
 
 students = [student1, student2, student3]
 
