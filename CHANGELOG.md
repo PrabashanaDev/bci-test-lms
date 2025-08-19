@@ -7,7 +7,7 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) gu
 ## [Unreleased]
 - Placeholder for upcoming features and improvements.
 
-## [3.0.0-pre] - 2025-08-18
+## [3.0.0-pre] - 2025-08-19
 ### Added
 - Introduced `Student`, `Course`, and `Employee` class modules with methods for average and salary calculations.
 - Implemented `Degree`, `Diploma`, and `Certificate` subclasses in `course.py`, each with specialized average logic.
@@ -16,12 +16,12 @@ This project follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) gu
 - Wrapped demo/test logic in `if __name__ == "__main__":` to prevent unintended execution when importing modules.
 - Prepared structured outputs in `findaverage.py` and `findSalary.py` to match assignment requirements.
 
-## [2.0.0] - 2025-05-10
+## [2.0.0] - 2025
 ### Changed
 - Refactored project to split classes into separate files for better modularity.
 - Improved readability and maintenance by applying OOP principles across modules.
 
-## [1.0.0] - 2025-02-15
+## [1.0.0] - 2025
 ### Added
 - Initial project setup.
 - Basic class structures and simple functions for testing assignment logic.
