@@ -29,17 +29,17 @@ if __name__ == "__main__":
 
     
 
-students = [student1, student2, student3]
+    students = [student1, student2, student3]
 
 
-for student in students:
-    student.showStudent()
-    if isinstance(student.course, Degree):
-        print("Course Type: Degree")
-    elif isinstance(student.course, diploma):
-        print("Course Type: Diploma")
-    else:
-        print("Course Type: Certificate")
+    for student in students:
+        student.showStudent()
+        if isinstance(student.course, Degree):
+            print("Course Type: Degree")
+        elif isinstance(student.course, diploma):
+            print("Course Type: Diploma")
+        else:
+            print("Course Type: Certificate")
 
     
 
