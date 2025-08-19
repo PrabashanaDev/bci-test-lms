@@ -1,3 +1,4 @@
+from course import Degree, diploma, certificate
 class Student:
     def __init__(self, id, name, age):
         self.stuID = id
@@ -14,6 +15,7 @@ class Student:
 
     def stuMarks(self, marks):
         self.marks = marks
+        
 
 if __name__ == "__main__":
 
@@ -21,7 +23,25 @@ if __name__ == "__main__":
     student2 = Student("002", "Akash", "22")
     student3 = Student("003", "Samidu", "21")
 
-    student1.showStudent()
-    student2.showStudent()
-    student3.showStudent()
+    student1.setCourse(Degree("BSIT"))
+    student2.setCourse(certificate("BSSE"))
+    student3.setCourse(diploma("Aquinas"))
+
+    
+
+    students = [student1, student2, student3]
+
+
+    for student in students:
+        student.showStudent()
+        if isinstance(student.course, Degree):
+            print("Course Type: Degree")
+        elif isinstance(student.course, diploma):
+            print("Course Type: Diploma")
+        else:
+            print("Course Type: Certificate")
+
+    
+
+
 
