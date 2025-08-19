@@ -6,7 +6,7 @@ class Employee(ABC):
         self.empName = empName
 
     def showEmployee(self):
-        print(f"Employee ID: {self.empId}, Employee name: {self.empName}")
+        print(f"Employee ID: {self.empID}, Employee name: {self.empName}")
 
     @abstractmethod
     def calculateSalary(self):
