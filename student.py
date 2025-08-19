@@ -19,13 +19,13 @@ class Student:
 
 if __name__ == "__main__":
 
-    student1 = Student("001", "Chathura", "23")
-    student2 = Student("002", "Akash", "22")
-    student3 = Student("003", "Samidu", "21")
+    student1 = Student("001", "Chathura Prabashana", "24")
+    student2 = Student("002", "Akash Vishmitha", "23")
+    student3 = Student("003", "Samidu Kaushalya", "22")
 
-    student1.setCourse(Degree("BSIT"))
-    student2.setCourse(certificate("BSSE"))
-    student3.setCourse(diploma("Aquinas"))
+    student1.setCourse(Degree("BSIT (Information Technology)"))
+    student2.setCourse(certificate("Robotic Certificate"))
+    student3.setCourse(diploma("Aquinas English Diploma"))
 
     
 

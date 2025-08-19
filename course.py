@@ -46,12 +46,12 @@ class certificate(Course):
 
 if __name__ == "__main__":
 
-    degree1 = Degree("BSIT")
-    degree2 = Degree("BSSE")
+    degree1 = Degree("BSIT (Information Technology)")
+    degree2 = Degree("BSSE (Software Engineering)")
 
-    diploma1 = diploma("Aquinas")
+    diploma1 = diploma("Aquinas English Diploma")
 
-    certificate1 = certificate("Robotic")
+    certificate1 = certificate("Robotic Certificate")
 
 
     degree1.showDegree()
