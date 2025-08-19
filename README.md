@@ -10,8 +10,4 @@ A simple Learning Management System implemented using Object-Oriented Programmin
 - `findaverage.py` – Creates sample students & courses, assigns marks, computes averages
 - `findSalary.py` – Creates sample employees and computes salaries
 
-## How to Run
 
-```bash
-python findaverage.py
-python findSalary.py
