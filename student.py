@@ -1,9 +1,23 @@
-from course import Degree, diploma, certificate
-class Student:
-    def __init__(self, id, name, age):
-        self.stuID = id
-        self.stuName = name
-        self.stuAge = age
+from abc import ABC, abstractmethod
+class Student(ABC):
+    TotalStudents = 0
+    result = 0
+    def __init__(self):
+        self.stuID = ""
+        self.stuName = ""
+        self.stuAge = ""
+        self.stuCourse = ""
+        self.stuFinalResult = ""
+        self.stuAddress = ""
+        Student.TotalStudents += 1
+
+    def setStudent(self, stuID, stuName, stuAge, stuCourse, stuFinalResult, stuAddress):
+        self.stuID = stuID
+        self.stuName = stuName
+        self.stuAge = stuAge
+        self.stuCourse = stuCourse
+        self.stuFinalResult = stuFinalResult
+        self.stuAddress = stuAddress
 
     
 
@@ -15,31 +29,33 @@ class Student:
 
     def stuMarks(self, marks):
         self.marks = marks
-        
 
-if __name__ == "__main__":
+    @abstractmethod
+    def showStudent(self):
+        pass
+    def avg(self):
+        pass
 
-    student1 = Student("001", "Chathura Prabashana", "24")
-    student2 = Student("002", "Akash Vishmitha", "23")
-    student3 = Student("003", "Samidu Kaushalya", "22")
+class BciPostGraduate(Student):
+    def showStudent(self):
+        print(" \nStudent ID: {} \nStudent Name: {} \nStudent Course: {} \nStudent Age: {} \nStudent Final Result: {} \nStudent Address: {}".format(self.stuID, self.stuName, self.stuCourse, self.stuAge, self.stuFinalResult, self.stuAddress))
 
-    student1.setCourse(Degree("BSIT (Information Technology)"))
-    student2.setCourse(certificate("Robotic Certificate"))
-    student3.setCourse(diploma("Aquinas English Diploma"))
+    def avg():
+        print("Total Avg: ", Student.result/Student.TotalStudents)  
 
-    
+class BciUnderGraduate(Student):
+    def showStudent(self):
+        print(" \nStudent ID: {} \nStudent Name: {} \nStudent Course: {} \nStudent Age: {} \nStudent Final Result: {} \nStudent Address: {}".format(self.stuID, self.stuName, self.stuCourse, self.stuAge, self.stuFinalResult, self.stuAddress))
 
-    students = [student1, student2, student3]
+    def avg():
+        print("Total Avg: ", Student.result/Student.TotalStudents)
+
+Student1 = BciPostGraduate()
+Student1.setStudent("001", "Chathura", "BSIT", "24", "90", "ABC ROAD")
+
+Student1.showStudent()
 
 
-    for student in students:
-        student.showStudent()
-        if isinstance(student.course, Degree):
-            print("Course Type: Degree")
-        elif isinstance(student.course, diploma):
-            print("Course Type: Diploma")
-        else:
-            print("Course Type: Certificate")
 
     
 
