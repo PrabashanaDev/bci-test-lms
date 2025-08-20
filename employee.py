@@ -1,48 +1,35 @@
 from abc import ABC, abstractmethod
 
 class Employee(ABC):
-    def __init__(self, empID, empName):
+    def __init__(self, empID, empName, empSalary):
         self.empID = empID
         self.empName = empName
-
-    def showEmployee(self):
-        print(f"Employee ID: {self.empID}, Employee name: {self.empName}")
+        self.empSalary = empSalary
 
     @abstractmethod
     def calculateSalary(self):
         pass
 
-class Academic(Employee):
-    def __init__(self, empID, empName, hourRate, hourWork):
-        super().__init__(empID, empName)
-        self.hourRate = hourRate
-        self.hourWork = hourWork
+class BciAcademicEmployee(Employee):
+    def __init__(self, empID, empName, empSalary):
+        super().__init__(empID, empName, empSalary)
     
-    def showAcademic(self):
-        print(f"Academic Employee Name: {self.empName}, Employee ID: {self.empID}, Hour Rate: {self.hourRate}, Work hours: {self.hourWork}")
+    def show_employee(self):
+        print(f"Academic Employee ID: {self.empID}, Academic Employee Name: {self.empName}, Salary: {self.empSalary}")
+    
+    def calculateSalary(self):
+        pass
+
+
+class BciNonAcademicEmployee(Employee):
+    def __init__(self, empID, empName, empSalary):
+        super().__init__(empID, empName, empSalary)  
+
+    def show_employee(self):
+        print(f"Non Academic Employee ID: {self.empID}, Non Academic Employee Name: {self.empName}, Salary: {self.empSalary}")
 
     def calculateSalary(self):
-        return self.hourRate * self.hourWork
-
-
-class NonAcademic(Employee):
-    def __init__(self, empID, empName, hourRate, hourWork):
-        super().__init__(empID, empName)
-        self.hourRate = hourRate
-        self.hourWork = hourWork    
-
-    def showNonAcademic(self):
-        print(f"Non Academic Employee Name: {self.empName}, Employee ID: {self.empID},Hour Rate: {self.hourRate}, Work hours: {self.hourWork}")
-
-    def calculateSalary(self):
-        return self.hourRate * self.hourWork
+        pass
     
-if __name__ == "__main__":
-    
-    employee1 = Academic("001", "Malindu", 1000, 8)
-    employee2 = NonAcademic("002", "Hirusha", 800, 8)
-    employee3 = Academic("003", "Udesh", 900, 8)
-
-    employee1.showAcademic()
-    employee2.showNonAcademic()
-    employee3.showAcademic()
+Employee1 = BciAcademicEmployee("001","Chathura","50000")
+Employee1.show_employee()
