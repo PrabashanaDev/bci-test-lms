@@ -8,10 +8,11 @@ employees = [employee1, employee2, employee3]
 
 for employee in employees:
     if isinstance(employee, BciAcademicEmployee):
-        employee.showAcademic()
+        employee.showBciAcademic()
     else:
-        employee.showNonAcademic()
+        employee.showBciNonAcademic()
 
-    print("Salary:", employee.calculateSalary())
-
+    print("Salary per Day:", employee.calculateSalary())
+    print("Salary per Month:", employee.calculateSalary()*30)
+    print("---------------------------------------------------")
 

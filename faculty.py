@@ -16,13 +16,13 @@ class BCIFaculty(Faculty):
 
 if __name__ == "__main__":
 
-    Faculty1 = BCIFaculty("School of Computing", "Dr.Waruna", "001")
-    Faculty2 = BCIFaculty("School of Business", "Chathura", "002")
-    Faculty3 = BCIFaculty("School of Education", "Chathura", "003")
-    Faculty4 = BCIFaculty("School of English", "Chathura", "004")
+    Faculty1 = BCIFaculty("School of Computing", "Dr.Waruna Premachandra", "001")
+    Faculty2 = BCIFaculty("School of Business", "Dr.Tharanga Rathnayaka", "002")
+    Faculty3 = BCIFaculty("School of Education", "Rev.Dr.George Perera", "003")
+    
 
     Faculty1.show_facultyNames()
     Faculty2.show_facultyNames()
     Faculty3.show_facultyNames()
-    Faculty4.show_facultyNames()
+    
         
