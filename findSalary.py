@@ -12,6 +12,6 @@ for employee in employees:
     else:
         employee.showBciNonAcademic()
 
-    print("Salary:", employee.calculateSalary())
-
+    print("Salary per Day:", employee.calculateSalary())
+    print("Salary per Month:", employee.calculateSalary()*30)
 
