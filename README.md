@@ -1,4 +1,4 @@
-# BCI LMS – Assignment 4 (Pre-release v3.0.0-pre)
+# BCI LMS – (Pre-release v3.0.0-pre)
 
 A simple Python OOP mini-system that demonstrates **Encapsulation, Inheritance, Abstraction, and Composition** across Students, Courses, Employees, Faculties, and Campus.
 
