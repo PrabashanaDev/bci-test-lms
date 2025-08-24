@@ -21,18 +21,19 @@ class Student(ABC):
 
     
 
-    def showStudent(self):
-        print(f"Student ID: {self.stuID}, Name: {self.stuName}, Age: {self.stuAge}")
+    
 
     def setCourse(self, course):
         self.course = course
+
+    @abstractmethod
+    def showStudent(self):
+        pass
 
     def stuMarks(self, marks):
         self.marks = marks
 
     @abstractmethod
-    def showStudent(self):
-        pass
     def avg(self):
         pass
 
@@ -50,10 +51,12 @@ class BciUnderGraduate(Student):
     def avg():
         print("Total Avg: ", Student.result/Student.TotalStudents)
 
-Student1 = BciPostGraduate()
-Student1.setStudent("001", "Chathura", "14", "BSIT", "90", "ABC ROAD")
+if __name__ == "__main__":
 
-Student1.showStudent()
+    Student1 = BciPostGraduate()
+    Student1.setStudent("001", "Chathura", "14", "BSIT", "90", "ABC ROAD")
+
+    Student1.showStudent()
 
 
 

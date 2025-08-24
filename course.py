@@ -23,7 +23,7 @@ class BciDegree(Course):
         print(f"Course ID: {self.courID}, Course Name: {self.courName}")
 
     def calAvg(self, marks):
-        pass
+        return marks
 
 class BciDiploma(Course):
     def __init__(self, courID, courName):
@@ -33,8 +33,8 @@ class BciDiploma(Course):
     def showCourse(self):
         print(f"Course ID: {self.courID}, Course Name: {self.courName}")
 
-    def calAvg(self):
-        pass
+    def calAvg(self, marks):
+        return marks
 
 class BciCertificate(Course):
     def __init__(self, courID, courName):
@@ -44,8 +44,8 @@ class BciCertificate(Course):
     def showCourse(self):
         print(f"Course ID: {self.courID}, Course Name: {self.courName}")
 
-    def calAvg(self):
-        pass
+    def calAvg(self, marks):
+        return marks
 
 if __name__ == "__main__":
 
