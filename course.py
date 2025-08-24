@@ -22,7 +22,7 @@ class BciDegree(Course):
     def showCourse(self):
         print(f"Course ID: {self.courID}, Course Name: {self.courName}")
 
-    def calAvg(self):
+    def calAvg(self, marks):
         pass
 
 class BciDiploma(Course):
