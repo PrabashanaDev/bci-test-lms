@@ -1,13 +1,19 @@
-# BCI Test LMS 
+# BCI LMS – Assignment 4 (Pre-release v3.0.0-pre)
 
-A simple Learning Management System implemented using Object-Oriented Programming in Python.
+A simple Python OOP mini-system that demonstrates **Encapsulation, Inheritance, Abstraction, and Composition** across Students, Courses, Employees, Faculties, and Campus.
 
 ## Structure
+- `student.py` – Student entity (private attributes, course assignment, marks, average)
+- `course.py` – Abstract `Course` + concrete `Degree`, `Diploma`, `Certificate` (different average logic)
+- `employee.py` – Abstract `Employee` + `Academic` (hourly) and `NonAcademic` (base + commission)
+- `faculty.py` – Holds students, courses, employees
+- `campus.py` – Holds faculties
+- `findaverage.py` – Creates campus/faculty/courses/students and prints averages
+- `findSalary.py` – Creates campus/faculty/employees and prints salaries
 
-- `student.py` – Defines the `Student` class (encapsulation via private attributes)
-- `course.py` – Defines `Course` and its subclasses (`Degree`, `Diploma`, `Certificate`)
-- `employee.py` – Defines `Employee`, `Academic`, and `NonAcademic` classes
-- `findaverage.py` – Creates sample students & courses, assigns marks, computes averages
-- `findSalary.py` – Creates sample employees and computes salaries
+## Run
+```bash
+python findaverage.py
+python findSalary.py
 
 
