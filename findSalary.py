@@ -1,13 +1,13 @@
-from employee import Academic, NonAcademic
+from employee import BciAcademicEmployee, BciNonAcademicEmployee
 
-employee1 = Academic("001", "Malindu", 1000, 8)
-employee2 = NonAcademic("002", "Hirusha", 800, 8)
-employee3 = Academic("003", "Udesh", 900, 8)
+employee1 = BciAcademicEmployee("001", "Malindu", 1000)
+employee2 = BciNonAcademicEmployee("002", "Hirusha", 800)
+employee3 = BciAcademicEmployee("003", "Udesh", 900)
 
 employees = [employee1, employee2, employee3]
 
 for employee in employees:
-    if isinstance(employee, Academic):
+    if isinstance(employee, BciAcademicEmployee):
         employee.showAcademic()
     else:
         employee.showNonAcademic()

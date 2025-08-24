@@ -51,7 +51,7 @@ class BciUnderGraduate(Student):
         print("Total Avg: ", Student.result/Student.TotalStudents)
 
 Student1 = BciPostGraduate()
-Student1.setStudent("001", "Chathura", "BSIT", "24", "90", "ABC ROAD")
+Student1.setStudent("001", "Chathura", "14", "BSIT", "90", "ABC ROAD")
 
 Student1.showStudent()
 
