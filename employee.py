@@ -30,6 +30,13 @@ class BciNonAcademicEmployee(Employee):
 
     def calculateSalary(self):
         return round(self.empSalary * 1.1)
+    
+if __name__ == "__main__":
 
-#Employee1 = BciAcademicEmployee("001","Chathura","50000")
-#Employee1.showBciAcademic()
+    employee1 = BciAcademicEmployee("001", "Malindu", 1000)
+    employee2 = BciNonAcademicEmployee("002", "Hirusha", 800)
+    employee3 = BciAcademicEmployee("003", "Udesh", 900)
+    
+    employee1.showBciAcademic()
+    employee2.showBciNonAcademic()
+    employee3.showBciAcademic()

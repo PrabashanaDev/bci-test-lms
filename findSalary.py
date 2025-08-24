@@ -14,4 +14,5 @@ for employee in employees:
 
     print("Salary per Day:", employee.calculateSalary())
     print("Salary per Month:", employee.calculateSalary()*30)
+    print("---------------------------------------------------")
 
